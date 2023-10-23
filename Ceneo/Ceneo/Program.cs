@@ -16,6 +16,7 @@ foreach (var item in products)
 void productGradeAdded(object sender, EventArgs e)
 {
     Console.WriteLine("Dodano nową ocenę");
+    Console.WriteLine();
 
 }
 
@@ -26,6 +27,7 @@ while (true)
     while (j == -1)
     {
         Console.WriteLine("Witaj w programie do oceny produktów");
+        Console.WriteLine();
         Console.WriteLine("Dostępne produkty to:");
         Console.WriteLine("Suszarka do włosów");
         Console.WriteLine("Aparat");
@@ -33,8 +35,10 @@ while (true)
         Console.WriteLine("Głośnik");
         Console.WriteLine("Komputer");
         Console.WriteLine("Monitor");
+        Console.WriteLine();
         Console.WriteLine("Wpisz nazwę produktu, który chcesz ocenić lub wpisz e żeby zakończyć program");
         name = Console.ReadLine();
+        Console.WriteLine();
 
         if (name == "e")
         {
@@ -53,7 +57,7 @@ while (true)
         if (j == -1)
         {
             Console.WriteLine("Nieprawidłowa nazwa");
-
+            Console.WriteLine();
         }
     }
     if (name == "e")
@@ -67,7 +71,7 @@ while (true)
         Console.WriteLine("wpisz q jeśli chcesz zakończyć dodawanie ocen");
 
         var ocena = Console.ReadLine();
-
+        Console.WriteLine();
         if (ocena == "q")
         {
 
@@ -89,4 +93,5 @@ while (true)
     Console.WriteLine("Min ocena: " + products[j].GetStatistics().Min);
     Console.WriteLine("Max ocena: " + products[j].GetStatistics().Max);
     Console.WriteLine("Przeciętna ocena: " + products[j].GetStatistics().Average);
+    Console.WriteLine();
 }
