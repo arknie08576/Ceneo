@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ceneo
 {
-    abstract class ProductBase : IProduct
+    public abstract class ProductBase : IProduct
     {
         public delegate void GradeAddedDelegate(object sender, EventArgs args);
         public abstract event GradeAddedDelegate GradeAdded;

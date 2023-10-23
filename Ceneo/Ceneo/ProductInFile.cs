@@ -7,7 +7,7 @@ using static Ceneo.ProductBase;
 
 namespace Ceneo
 {
-    internal class ProductInFile : ProductBase
+    public class ProductInFile : ProductBase
     {
         private const string filename = "grades.txt";
         public override event GradeAddedDelegate GradeAdded;
