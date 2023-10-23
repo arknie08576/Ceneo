@@ -45,12 +45,29 @@ while (true)
             break;
         }
 
-        for (int i = 0; i < products.Count; i++)
+        switch (name)
         {
-            if (products[i].Name == name)
-            {
-                j = i;
-            }
+            case "Suszarka do włosów":
+                j = 0;
+                break;
+            case "Aparat":
+                j = 1;
+                break;
+            case "Telefon":
+                j = 2;
+                break;
+            case "Głośnik":
+                j = 3;
+                break;
+            case "Komputer":
+                j = 4;
+                break;
+            case "Monitor":
+                j = 5;
+                break;
+            default:
+                j = -1;
+                break;
 
         }
 
@@ -85,7 +102,7 @@ while (true)
         catch (Exception e)
         {
             Console.WriteLine(e.Message);
-
+            Console.WriteLine();
         }
     }
 

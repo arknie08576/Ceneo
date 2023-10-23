@@ -28,7 +28,10 @@ namespace Ceneo
             {
                 AddPoints(scoreToFloat);
             }
-
+            else
+            {
+                throw new Exception("Nieprawidłowa ocena");
+            }
         }
 
         public abstract Statistics GetStatistics();
