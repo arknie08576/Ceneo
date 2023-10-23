@@ -26,7 +26,7 @@ while (true)
     while (j == -1)
     {
         Console.WriteLine("Witaj w programie do oceny produktów");
-        Console.WriteLine("Dostępne produkty to");
+        Console.WriteLine("Dostępne produkty to:");
         Console.WriteLine("Suszarka do włosów");
         Console.WriteLine("Aparat");
         Console.WriteLine("Telefon");
@@ -46,9 +46,7 @@ while (true)
             if (products[i].Name == name)
             {
                 j = i;
-                //break;
             }
-
 
         }
 
@@ -86,7 +84,6 @@ while (true)
 
         }
     }
-
 
     Console.WriteLine(products[j].Name);
     Console.WriteLine("Min ocena: " + products[j].GetStatistics().Min);

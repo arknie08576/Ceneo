@@ -30,6 +30,7 @@ namespace Ceneo
             }
 
         }
+
         public abstract Statistics GetStatistics();
 
     }
