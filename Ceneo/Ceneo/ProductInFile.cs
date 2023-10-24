@@ -9,12 +9,12 @@ namespace Ceneo
 {
     public class ProductInFile : ProductBase
     {
-        private const string filename = "grades.txt";
+        public string filename;
         public override event GradeAddedDelegate GradeAdded;
         public ProductInFile(string name)
             : base(name)
         {
-
+            filename = this.Name + ".txt";
         }
 
         public override void AddPoints(float score)
@@ -23,7 +23,7 @@ namespace Ceneo
             {
                 using (var writer = File.AppendText(filename))
                 {
-                    writer.WriteLine(this.Name);
+                    
                     writer.WriteLine(score);
                     if (GradeAdded != null)
                     {
@@ -50,19 +50,14 @@ namespace Ceneo
                     var line = reader.ReadLine();
                     while (line != null)
                     {
-                        if (line == this.Name)
-                        {
-                            line = reader.ReadLine();
+                        
+                           // line = reader.ReadLine();
                             float point = float.Parse(line);
                             stats.AddGrade(point);
 
                             line = reader.ReadLine();
-                        }
-                        else
-                        {
-                            line = reader.ReadLine();
-                            line = reader.ReadLine();
-                        }
+                        
+
                     }
 
                 }

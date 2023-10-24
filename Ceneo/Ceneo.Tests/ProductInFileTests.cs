@@ -14,9 +14,8 @@ namespace Ceneo.Tests
         public void Test()
         {
 
-            File.WriteAllText(@"C:\Users\niedzielski\source\repos\arknie08576\Ceneo\Ceneo\Ceneo.Tests\bin\Debug\net7.0\grades.txt", "");
-
             var p1 = new ProductInFile("Aparat");
+            File.WriteAllText(p1.filename, "");
             p1.AddPoints("4");
             p1.AddPoints("73");
             p1.AddPoints("5");
