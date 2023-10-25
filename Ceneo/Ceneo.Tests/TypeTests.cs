@@ -2,8 +2,6 @@ namespace Ceneo.Tests
 {
     public class TypeTests
     {
-
-
         [Test]
         public void CompareTwoObjects()
         {

@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static Ceneo.ProductBase;
-
-namespace Ceneo
+﻿namespace Ceneo
 {
     public class ProductInFile : ProductBase
     {
@@ -51,12 +44,9 @@ namespace Ceneo
                     while (line != null)
                     {
                         
-                           // line = reader.ReadLine();
                             float point = float.Parse(line);
                             stats.AddGrade(point);
-
                             line = reader.ReadLine();
-                        
 
                     }
 

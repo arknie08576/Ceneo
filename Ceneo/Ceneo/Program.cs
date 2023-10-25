@@ -10,7 +10,6 @@ products.Add(new ProductInFile("Monitor"));
 
 foreach (var item in products)
 {
-
     item.GradeAdded += productGradeAdded;
 }
 void productGradeAdded(object sender, EventArgs e)
@@ -91,7 +90,6 @@ while (true)
         Console.WriteLine();
         if (ocena == "q")
         {
-
             break;
         }
 
